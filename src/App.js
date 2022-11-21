@@ -31,20 +31,12 @@ function App() {
   }
   
   const handleCheck = (id) => {
-    // console.log(`key: ${id}`);
     const listItems = items.map((item) => item.id === id ? {...item,checked: !item.checked} : item);
-    // setItems(listItems);
-    // // console.log(listItems);
-    // // console.log(items);
-    // localStorage.setItem('shoppinglist',JSON.stringify(listItems));
     setAndSaveItems(listItems);
   }
 
   const handleDelete = (id) => {
-    // console.log(id);
     const listItems = items.filter((item) => item.id !== id);
-    // setItems(listItems);
-    // localStorage.setItem('shoppinglist',JSON.stringify(listItems));
     setAndSaveItems(listItems);
   }
   
@@ -55,8 +47,6 @@ function App() {
     }
 
     addItem(newItem);
-    // console.log('submitted');
-    // console.log(newItem);
     setNewItem('');
   }
 

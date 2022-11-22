@@ -64,9 +64,9 @@ function App() {
         setSearch={setSearch}
       />
       <Content 
-      items = {items.filter(item => ((item.item).toLowerCase()).includes(search.toLowerCase()))}
-      handleCheck = {handleCheck}
-      handleDelete = {handleDelete} 
+        items = {items.filter(item => ((item.item).toLowerCase()).includes(search.toLowerCase()))}
+        handleCheck = {handleCheck}
+        handleDelete = {handleDelete} 
       />
       <Footer length={items.length} />
     </div>

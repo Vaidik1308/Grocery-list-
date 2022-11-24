@@ -9,7 +9,8 @@ const Content = ({items,handleCheck,handleDelete}) => {
     // const name = "Vaidik";
    
   return (
-    <main>
+    //this is known as fragment
+    <>           
         {items.length ? (
           <ItemList 
           items = {items}
@@ -20,7 +21,7 @@ const Content = ({items,handleCheck,handleDelete}) => {
         ) : (
           <p style={{marginTop: '2rem'}}>Your list is Empty.</p>
         )}  
-    </main>
+    </>
   )
 }
 

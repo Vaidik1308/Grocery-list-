@@ -23,7 +23,7 @@ function AddItems({newItem,setNewItem,handleSubmit}) {
         <button
             type='submit'
             aria-label='Add Items'
-            onClick={() => inputRef.current.ocus()} // because we are using an icon as a button
+            onClick={() => inputRef.current.focus()} // because we are using an icon as a button
         >
             <FaPlus />
         </button>
